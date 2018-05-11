@@ -1,0 +1,62 @@
+<html>
+    <body>
+        <script>
+
+            confirm("If you are ready to play press OK!");
+
+            var age = prompt("How old are you?");
+
+            if (age < 13) {
+                confirm("You can play this time but really you should be 13+");
+            }
+
+            else {
+                confirm("OK, let's begin!");
+            }
+
+            confirm ("You are at a Rolling Stones concert, and you hear the lyrics 'Baby, I can't stay, you got to roll me and call me the tumblin dice'");
+
+            confirm ("Suddenly, Mick Jagger stops and says, 'Who wants to roll the dice?'");
+
+            var userAnswer = prompt("Do you want to try and roll the dice on stage?");
+
+            if (userAnswer === "yes") {
+                confirm ("You and Jagger both roll, you both get a six, therefore you both win");
+
+                var feedback = prompt("Please rate the game on a scale from 1 to 10");
+
+                if (feedback > 6) {
+                    confirm("Thank you! We should hang out at the next concert!");
+                }
+
+                else {
+                    confirm("I'll keep practicing coding.");
+                } 
+
+            }
+
+            else if (userAnswer === "no") {
+                confirm ("OK, no worries")
+            }
+
+            else {
+                userAnswer = prompt ("Please enter either yes or no");
+
+                if (userAnswer === "yes") {
+                    confirm ("You and Jagger both roll, you both get a six, therefore you both win");
+
+                    var feedback = prompt("Please rate the game on a scale from 1 to 10");
+
+                    if (feedback > 6) {
+                        confirm("Thank you! We should hang out at the next concert!");
+                    }
+
+                    else {
+                        confirm("I'll keep practicing coding.");
+                    } 
+                }
+                else {confirm("OK, no worries")}
+            }
+        </script>
+    </body>
+</html>
